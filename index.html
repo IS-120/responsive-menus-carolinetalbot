@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="First web assignment">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="./images/site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<script>
+  document.querySelector(".menu-icon").addEventListener("click", function () {
+    this.parentElement.classList.toggle("close");
+  });
+</script>
+
+<body>
+  <section class="hero">
+    <picture>
+      <source media="(min-width: 769px)" srcset="images/hero-1920.jpg">
+      <source media="(min-width: 381px)" srcset="images/hero-768.jpg">
+      <source media="(max-width: 380px)" srcset="images/hero-380.jpg">
+      <img src="images/hero-768.jpg" alt="ocean painting">
+    </picture>
+    <div class="text-overlay">
+      <h1>CAROLINE TALBOT</h1>
+      <p>FINE ART</p>
+    </div>
+  </section>
+
+  <div class="menu-icon">
+    <svg viewbox="0 0 60 60" width="40px" height="40px">
+      <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      <line x1="5%" y1="50%" x2="95%" y2="50%" />
+    </svg>
+  </div>
+
+  <article class="panel">
+    <figure class="right top">
+      <div class="original art">
+        <img src="images/painting.1.jpg" alt="An original art piece by Caroline" height="2400" width="1920">
+      </div>
+      <figcaption>An Original Painting By Caroline</figcaption>
+    </figure>
+    <div class="left bottom">
+      <h2>Why I Became An Artist</h2>
+      <p><em>Why I Became An Artist</em></p>
+      <h3>The first time I painted I knew that this was going to become more than just a hobby! Painting is a huge
+        stress reliever and makes me forget about everything else going on.
+        Art helps me grow my creativity and helps me release any stress I need to.
+      </h3>
+      <a href="" class="button">Learn More</a>
+    </div>
+  </article>
+  </main>
+
+  <main>
+    <article>
+      <img src="images/blue-wave-900.jpg" alt="blue textured wave" width="900" height="900">
+      <h2>Article 1</h2>
+      <p><strong>BLUE WAVE (9X15 @ $50)</strong></p>
+      <p> Here is my most recent art piece I painted while visiting California. </p>
+      <a class="button">Buy Now</a>
+  </main>
+
+  <section class="cards">
+
+    <a class="card">
+      <img src="images/about-me-480.jpg" alt="about me" width="480" height="480">
+      <p>Learn about me</p>
+    </a>
+    <a class="card">
+      <img src="images/paintings-and-prints-480.jpg" alt="my paintings and prints" width="480" height="480">
+      <p>Take a look at my work</p>
+    </a>
+    <a class="card">
+      <img src="images/blog-480.jpg" alt="my blog" width="480" height="480">
+      <p>Check out my blog</p>
+    </a>
+    <a class="card">
+      <img src="images/contact-480.jpg" alt="Place to contact me" width="480" height="480">
+      <p>Contact me</p>
+    </a>
+  </section>
+
+  <aside>
+    <p>Check me out on social media!</p>
+  </aside>
+  <footer>
+    <p>@carolinetalbot</p>
+  </footer>
+</body>
+
+</html>
