@@ -20,12 +20,6 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<script>
-  document.querySelector(".menu-icon").addEventListener("click", function () {
-    this.parentElement.classList.toggle("close");
-  });
-</script>
-
 <body>
   <section class="hero">
     <picture>
@@ -40,30 +34,56 @@
     </div>
   </section>
 
-  <div class="menu-icon">
-    <svg viewbox="0 0 60 60" width="40px" height="40px">
-      <line x1="5%" y1="50%" x2="95%" y2="50%" />
-      <line x1="5%" y1="50%" x2="95%" y2="50%" />
-    </svg>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a>Home</a>
+        </li>
+        <li><a href="about/">About</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <article class="panel">
-    <figure class="right top">
-      <div class="original art">
-        <img src="images/painting.1.jpg" alt="An original art piece by Caroline" height="2400" width="1920">
+
+
+
+  <main>
+    <article class="panel">
+      <div class="left top">
+        <figure>
+          <img srcset="images/ct-300w.jpg 300w,
+                 images/ct-600w.jpg 600w,
+                 images/mct-900w.jpg 900w" sizes="50vw" src="images/ct-600w.jpg" alt="Caroline" height="494"
+            width="600">
+          <figcaption>Picture of me</figcaption>
+        </figure>
       </div>
-      <figcaption>An Original Painting By Caroline</figcaption>
-    </figure>
-    <div class="left bottom">
-      <h2>Why I Became An Artist</h2>
-      <p><em>Why I Became An Artist</em></p>
-      <h3>The first time I painted I knew that this was going to become more than just a hobby! Painting is a huge
-        stress reliever and makes me forget about everything else going on.
-        Art helps me grow my creativity and helps me release any stress I need to.
-      </h3>
-      <a href="" class="button">Learn More</a>
-    </div>
-  </article>
+      <div class="right bottom">
+        <h2>Hi, I'm Caroline!</h2>
+        <p><strong>Hi, I'm Caroline!</strong></p>
+        <a href="" class="button">About Me</a>
+      </div>
+    </article>
+
+    <article class="panel">
+      <figure class="right top">
+        <div class="original art">
+          <img src="images/painting.1.jpg" alt="An original art piece by Caroline" height="2400" width="1920">
+        </div>
+        <figcaption>An Original Painting By Caroline</figcaption>
+      </figure>
+      <div class="left bottom">
+        <h2>Why I Became An Artist</h2>
+        <p><em>Why I Became An Artist</em></p>
+        <h3>The first time I painted I knew that this was going to become more than just a hobby! Painting is a huge
+          stress reliever and makes me forget about everything else going on.
+          Art helps me grow my creativity and helps me release any stress I need to.
+        </h3>
+        <a href="" class="button">Learn More</a>
+      </div>
+    </article>
   </main>
 
   <main>

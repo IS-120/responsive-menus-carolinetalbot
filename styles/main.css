@@ -262,7 +262,7 @@ h2 {
 
 .hero p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  font-size: 1.5rem;
+  /*   font-size: 1.5rem; */
 }
 
 .hero img {
@@ -285,31 +285,6 @@ picture img {
   height: 100%;
   object-fit: cover;
   object-position: left center;
-}
-
-.menu-icon svg {
-  width: 80px;
-  height: auto;
-}
-
-.menu-icon line {
-  stroke: var(--midnight-svg);
-  stroke-width: 6px;
-  stroke-linecap: round;
-  transform-origin: center;
-  transition: transform 300ms ease, background-color 300ms;
-}
-
-.menu-icon line:first-child {
-  transform: translateY(16%);
-}
-
-.menu-icon line:last-child {
-  transform: translateY(-16%);
-}
-
-.menu-icon svg:hover line {
-  stroke: var(--moon-mist-svg-hover);
 }
 
 @media (min-width: 600px) {
